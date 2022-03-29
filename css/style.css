@@ -123,6 +123,7 @@ hr{
     left: 4rem;
     top: 2rem;
 }
+
 .banner-text img:nth-of-type(2){
     width: 6rem;
     height: auto;
@@ -188,7 +189,9 @@ hr{
     justify-content: center;
     position: relative;
 }
-
+.two-images-container img {
+    width: 100%;
+}
 .two-images-container .img-1, .two-images-container .img-2{
     position: relative;
     transform: skewY(-4deg);
