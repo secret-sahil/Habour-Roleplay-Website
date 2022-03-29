@@ -1,0 +1,280 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+:root{
+    --dark-blue:#1f1b3e;
+    --white:#f1f1ff;
+    --purple:#7c5bf1;
+    --yellow:#ffde2a;
+    --font-1:'Staatliches', cursive;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--white);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-1);
+}
+body{
+    background-color: var(--dark-blue);
+}
+h1,h2,h3,h4,h5,p{ 
+    font-family: var(--font-1);
+}
+hr{
+    margin: 1rem 0;
+    border: 2px solid var(--white);
+}
+.navbar{
+    position: absolute;
+    z-index: 1;
+    padding: 1rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.navbar li{
+    font-family: var(--font-1);
+    list-style: none;
+    display: inline;
+}
+
+.navbar .left-part{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.navbar .left-part li{
+    margin-right: 5rem;
+}
+
+.navbar .right-part{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.navbar .right-part li{
+    margin-left: 5rem;
+}
+
+.navbar .logo img{
+    width: 2.5rem;
+    height: auto;
+}
+.navbar .left-part p{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+.navbar a{
+    color: var(--white);
+    font-size: 1.5rem;
+    text-decoration: none;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.navbar a:hover{
+    color: var(--yellow);
+    text-shadow:0px 0px 30px var(--yellow);
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.banner-container{
+    position: relative;
+    text-align: center;
+}
+.banner-text{
+    width: 80%;
+    text-shadow:0px 0px 30px var(--purple);
+    letter-spacing: .5rem;
+    color: var(--white);
+    font-size: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.connect-btn{
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--purple);
+    margin-top: 1rem;
+    border:0px;
+    padding: 1rem 3rem;
+    border-radius: 3px;
+}
+.connect-btn:hover{
+    cursor: pointer;
+}
+.banner-text img:first-of-type{
+    width: 6rem;
+    height: auto;
+    position: relative;
+    left: 4rem;
+    top: 2rem;
+}
+.banner-text img:nth-of-type(2){
+    width: 6rem;
+    height: auto;
+    position: relative;
+    right: 4rem;
+    top: 2rem;
+}
+.banner{
+    content: url(/images/banner-gtav.jpg);
+    width: 100%;
+    height: auto;
+}
+
+.white-container{
+    text-align: center;
+    margin-top: -5rem;
+    transform: skewY(-4deg);
+    position: relative;
+    width: 100%;
+    background-color: var(--white);
+    height: 500px;
+}
+.white-container-2{
+    text-align: center;
+    margin-top: -10rem;
+    transform: skewY(-4deg);
+    position: relative;
+    width: 100%;
+    background-color: var(--white);
+    height: 500px;
+}
+.heading-text{
+    font-size: 5rem;
+}
+.heading-text span{
+    color: var(--purple);
+}
+.small-container{
+    color: #252525;
+    padding-top: 2rem;
+    margin:0 20%;
+}
+.small-container-2{
+    color: #252525;
+    padding-top: 14rem;
+    margin:0 20%;
+}
+.text{
+    font-size: 1.5rem;
+}
+.b-text{
+    font-size: 2rem;
+}
+
+.text span, .b-text span{
+    color: var(--purple);
+}
+.two-images-container{
+    margin-top: -10rem;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.two-images-container .img-1, .two-images-container .img-2{
+    position: relative;
+    transform: skewY(-4deg);
+}
+
+.two-images-container .img-1-text{
+    font-size: 5rem;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.two-images-container .img-2-text{
+    font-size: 5rem;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+.two-images-container .img-1-text span, .two-images-container .img-2-text span{
+    color: var(--purple);
+}
+.pop-img-1{
+    text-align: center;
+    margin-top: -39.2rem;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.pop-img-1 img{
+    width: 30%;
+}
+.image-container{
+    transform: skewY(-4deg);
+    position: relative;
+    margin-top: -5rem;
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.box{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr;
+}
+.boxes{
+    color: var(--white);
+    font-size: 4rem;
+}
+.car-float-img img{
+    width: 20rem;
+    position:absolute;
+    right: 10rem;
+    top: -2rem;
+}
+
+.man-float-img img{
+    width: 15rem;
+    position:absolute;
+    left: 10rem;
+    top: 13rem;
+}
+.gangster-float-img img{
+    width: 13rem;
+    position:absolute;
+    right: 10rem;
+    top: 27rem;
+}
+.bag-float-img img{
+    width: 20rem;
+    position:absolute;
+    left: 10rem;
+    top: 43rem;
+}
