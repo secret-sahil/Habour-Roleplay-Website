@@ -131,7 +131,7 @@ hr{
     top: 2rem;
 }
 .banner{
-    content: url(/images/banner-gtav.jpg);
+    content: url(./images/banner-gtav.jpg);
     width: 100%;
     height: auto;
 }
