@@ -130,8 +130,7 @@ hr{
     right: 4rem;
     top: 2rem;
 }
-.banner{
-    content: url(./images/banner-gtav.jpg);
+.banner img{
     width: 100%;
     height: auto;
 }
